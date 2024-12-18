@@ -1,0 +1,6 @@
+input[type="checkbox"]{
+    display:inline;
+}
+label{
+    display:block;
+}
