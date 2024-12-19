@@ -1,6 +1,124 @@
+html{
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+body{
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin:auto;
+    width:80%;
+    background-color: rgb(104, 63, 254);
+    font-size:larger;
+}
+#indo{
+    text-align: center;
+}
+form{
+    width:100%;
+    height: 100%;
+}
+#form2{
+    
+    height: 100%;
+    width: 80vw;
+}
+div{
+    background-color:rgb(92, 4, 160) ;
+    width:100%;
+    min-height: 100vh;
+}
+.header{
+    font-weight: 700; 
+    margin: 0 auto;
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#description{
+    color: rgb(255, 255, 255);
+
+    font-style: italic;
+    font-size: 20px;
+    width: 40vw;
+    margin: 0 auto;
+    text-align:center;
+    padding-bottom: 20px;
+}
+fieldset[id="info"]{
+    border: 0px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: left;
+    display:block;
+}
+fieldset[id="feedback"]{
+    border: 0px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: left;
+    display:block;
+}
+fieldset[id="review"]{
+    border: 0px;
+    border-radius: 10%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: left;
+    display:block;
+}
+
+input[type="text"],input[type="number"],input[type="email"]{
+    text-align:left;
+    font-size: 1.1em;
+    height: 5vh;
+    width:70vw;
+}
+
 input[type="checkbox"]{
     display:inline;
 }
+select[id="dropdown"]{
+    margin: 0 auto;
+}
+#dropdown {
+    margin: 0 auto; /* Centers the dropdown horizontally */
+    width: 40%;
+    height: 40px;     /* Adjust width as needed */
+    display: block; /* Ensure it's treated as a block element */
+    text-align: center; /* Optional: Align text inside the dropdown */
+}
 label{
+    padding-bottom: 20px;
     display:block;
 }
+textarea.text-ar {
+    display: block; /* Treat textarea as a block element */
+    margin: 0 auto; /* Center horizontally */
+    width: 70%; /* Set desired width */
+    height: 100px; /* Set desired height */
+    font-size: 1.1em; /* Optional: Adjust font size */
+    padding: 10px; /* Add padding for better appearance */
+    resize: none; /* Disable resizing if desired */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    border: 1px solid #ccc; /* Optional: Add border */
+}
+
+input[id="submit"] {
+    display: block; /* Treat submit as a block element */
+    margin: 20px auto; /* Center horizontally with margin */
+    width: 30%; /* Set desired width */
+    height: 40px; /* Adjust button height */
+    background-color: rgb(92, 4, 160); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1em; /* Adjust font size */
+}
+
+input[id="submit"]:hover {
+    background-color: rgb(120, 50, 200); /* Optional: Change color on hover */
+}
+
