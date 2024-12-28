@@ -15,12 +15,7 @@
     grid-template-rows: 1fr; */
     margin-bottom: 80px;
 }   
-.item1{
-    display: flex;
-    flex-direction: column;
-    justify-content: ;
-    align-items: center;
-}
+
 .sidtext{
     display: flex;
     width:30%;
@@ -32,7 +27,7 @@ ul>li{
 }
 .main_con{
     display: grid;
-    background-color: aqua;
+    background-color: bisque;
     width:100%;
     height:500px;
     grid-template-columns: repeat(2,1fr);
@@ -40,18 +35,35 @@ ul>li{
     place-items: center;
     margin-bottom: 60px;
 }
+.item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    align-items: center;
+}
 .new{
+    color: black;
     font-size: small;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.a{
+    font-size:40px;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(115, 83, 42);
 }
 .main_text{
-    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+   
     color: white;
     margin-bottom: 90px;
 }
 .item{
     width:50%;
     height:80%;
-    background-color: blue;
+    background-color: rgb(242, 244, 224);
     place-items: center;
     border-radius: 50px;
 }
@@ -62,7 +74,7 @@ ul>li{
     border-radius: 10%;
 }
 .center{
-    background-color: brown;
+   color:rgb(100, 65, 21);
     width:100%;
     height: 50px;
     justify-items: center;
@@ -79,7 +91,7 @@ ul>li{
     margin-bottom: 50px;
 }
 .item_win{
-    background-color: blueviolet;
+    background-color: rgb(177, 140, 92);
     width: 95%;
     height: 95%;
 }
@@ -87,7 +99,6 @@ ul>li{
     display: flex;
     width:100%;
     height: 50px;
-    background-color:black ;
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
@@ -96,6 +107,7 @@ ul>li{
     width:100px;
     height: 30px;
     border-radius: 10px;
-    background-color: rgb(23, 23, 178);
-    color: white;
+    background-color: rgb(178, 136, 38);
+    color: rgb(0, 0, 0);
+    outline: none;
 }
