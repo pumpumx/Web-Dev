@@ -34,6 +34,12 @@ main{
     border-radius: 5px;
 }
 .item{
+    display:flex;
+    font-size:40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
     border-radius: 5px;
     width:90%;
     height: 85%;
@@ -51,7 +57,6 @@ main{
 #Player{
     font-size:40px;
     margin-bottom: 120px;
-    
 }
 .button{
     display:flex;
