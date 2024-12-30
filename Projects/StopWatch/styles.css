@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:700px;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width:50%;
+    height: 400px;
+    background-color: rgb(150, 114, 6);
+    box-shadow: 20px 20px 10px bisque;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    width:100%;
+    align-content: space-evenly ;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 200px;
+}
+.item{
+    width:150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: none;
+}
+.item:hover{
+    background-color: rgb(225, 145, 24);
+}
+.clocknum{
+    display: flex;
+    position: absolute;
+    width:100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap:50px;
+}
+.clock{
+    display: flex;
+    width:80px;
+    height: 80px;
+    background-color: rgb(238, 177, 45);
+    border-radius: 5px;
+    box-shadow:2px 2px 20px bisque;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    initial-value: 1;
+    align-content: center;
+    justify-content: center;
+
+}
