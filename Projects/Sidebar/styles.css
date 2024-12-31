@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Corrected from 0 to border-box */
+}
+
+body {
+    position: absolute;
+    background-color: rgb(202, 200, 199);
+    width: 100%;
+    height: 100vh;
+}
+main{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(202, 200, 199);
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 10px;
+    justify-content: flex-end;
+    align-items: end;
+}
+.line{
+    margin:20px;
+}
+.slide {
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.head {
+    font-family: 'Brush Script MT', cursive;
+    color: rgb(201, 83, 103);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+p:hover{
+    cursor: default;
+}
+.cross{
+    width:40px;
+    height: 40px;
+    margin:30px 30px 0 0 ;
+        font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.name {
+    margin: 20px 0 0 30px;
+    font-size: 50px;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    margin:30px 40px 0 0 ;
+    
+}
+.line{
+    margin:3px 0 6px;
+    width:30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 20%;
+    background-color: rgb(232, 40, 72);
+}
+.contain {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+.home, .contact, .about {
+    animation-play-state: paused;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    transition: background-color 0.3s; 
+}
+
+.home:hover , .contact:hover , .about:hover {
+    animation: slideleft 0.3s ;
+    background-color: brown;
+    animation-play-state: paused;
+}
+
+.cross:hover{
+    color: black;
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(30px);
+    }
+}
+.three:hover .line{
+    background-color: black;
+}
+#sidebar-hidden{
+    transform:translateX(-100%);
+    transition: 0.7s ease-out;
+}
