@@ -8,4 +8,3 @@ function animate(){
 function back(){
     sidebar.style.transform = "translateX(-100%)";
 }
-
