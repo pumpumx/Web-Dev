@@ -53,6 +53,12 @@ input{
     width:25%;
     height: 3rem;
     border-radius: 10px;
+    outline: none;
+    border:2px solid black;
+}
+.item:hover{
+    opacity: 0.5;
+    transition: 0.2s ease-in;
 }
 .time{
     background-color: white;
