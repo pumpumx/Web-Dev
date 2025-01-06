@@ -54,7 +54,10 @@ main{
     font-size: 15px;
     color:white;
     padding: 16px;
-    
+}
+.item p{
+    position: absolute;
+    left:10px;
 }
 .buttons{
     display: flex;
