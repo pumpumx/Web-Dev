@@ -7,11 +7,13 @@
 body{
     width:100%;
     height: 100vh;
+    background-color: rgb(233, 224, 192);
 }
 main{
     margin-top: 5%;
     width: 100%;
     height: 100vh;
+   
 }
 .mainC{
     display: flex;
@@ -20,10 +22,7 @@ main{
     align-items: center;
     width: 100%;
     height: 60%;
-    background-color: aqua;
     justify-content: space-around;
-    
-
 }
 .container1{
     text-align: center; 
@@ -49,7 +48,6 @@ main{
     width:80px;
     height: 80px;
     font-size: 50px;
-    background-color: blue;
     outline: none;
     border: 2px solid black;
     box-shadow: 4px 4px 20px black;
@@ -58,21 +56,22 @@ main{
     background-color: #fff;
     opacity: 0.8;
     transition:0.2s ease-in;
+    scale: 105%;
 }
 .container3{
     width:100%;
     height: 20%;
-    background-color: beige;
-    font-size: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-.button1{
+#button1{
     background-color: green;
 }
-.button2{
+#button2{
     background-color: red;
 }
-.button3{
+#button3{
     background-color: yellow;
 }
 .container4{
@@ -81,13 +80,11 @@ main{
     align-items: center;
     width:100%;
     height: 20%;
-    background-color: brown;
     gap:70px;
 }
 .score{
     text-align: center;
     font-size: 50px;
-
 }
 
 
