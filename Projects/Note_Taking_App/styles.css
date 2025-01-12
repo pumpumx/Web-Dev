@@ -40,9 +40,24 @@ main{
     height: 100%;
     padding-top: 5%;
     background-color: #000;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows: repeat(5,1fr); */
+    row-gap: 20% ;
+    grid-auto-flow: row;
+    row-gap: 5%;
+    /* column-gap: 20px; */
 }
 .item{
     background-color: red;
+    width:200px;
+    height: 200px;
 }
+.box{
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+.add{
+    font-size: 50px;
+}
+
