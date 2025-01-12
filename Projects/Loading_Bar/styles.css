@@ -1,0 +1,58 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color:black;
+    }
+
+
+    main{
+        position: absolute;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50vh;
+        justify-content: space-around;
+        padding-top: 5%;
+        padding-bottom:5% ;
+        flex-direction: column;
+        z-index: -12;
+    }
+    .head{
+        color: white;
+        margin-top: 30px;
+    }
+    .per{
+        color: white;
+        font-size: 30px;
+        display:flex;
+    }
+    .per p{
+        display: inline;
+    }
+    .bar{
+        position:relative;
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        height: 5px;
+        margin-bottom: 50px;
+        z-index:5;
+    }
+    .over{
+        position:absolute;
+        width: 0%;
+        height: 5px;
+        background-color: rgb(255, 0, 0);
+        z-index: 10;
+        color: red;
+    }

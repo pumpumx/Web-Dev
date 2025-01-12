@@ -9,6 +9,4 @@ function main(){
     mem.classList.add("item");
     mem.style.width = "400px";
     mem.style.width = "400px";
-
-
 }
