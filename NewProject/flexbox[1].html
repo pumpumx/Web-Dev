@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+   <style>body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e8c0; 
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .game p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .choice {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    font-size: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rock {
+    background-color: green;
+  }
+  
+  .paper {
+    background-color: red;
+  }
+  
+  .scissors {
+    background-color: yellow;
+  }
+  
+  .scores {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  
+  .scores div {
+    text-align: center;
+  }
+  
+  .score {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+  
+  .user-score {
+    color: blue;
+  }
+  
+  .computer-score {
+    color: red;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors Game</h1>
+    <div class="game">
+      <p>Choose Your Move:</p>
+      <div class="choices">
+        <div class="choice rock">✊</div>
+        <div class="choice paper">✋</div>
+        <div class="choice scissors">✌️</div>
+      </div>
+    </div>
+    <div class="scores">
+      <div>
+        <p>Your Score:</p>
+        <p class="score user-score">0</p>
+      </div>
+      <div>
+        <p>Computer Score:</p>
+        <p class="score computer-score">0</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
