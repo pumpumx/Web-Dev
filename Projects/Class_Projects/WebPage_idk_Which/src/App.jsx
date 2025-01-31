@@ -16,7 +16,7 @@ function App() {
        shadow-white mr- text-bold mr-8
       '>Buy Now</button></span>
         </div>
-          <div className="w-full h-screen flex flex-col bg-[url('assets/wed.jpg')] bg-no-repeat bg-cover" >
+          <div className="w-full h-[92vh] flex flex-col bg-[url('assets/wed.jpg')] bg-no-repeat bg-cover bg-scroll " >
           <div className='flex bg-transparent justify-around items-center w-full h-[4rem] '>
             <span><p className='text-3xl text-white'>Belle</p></span>
             <span>
@@ -32,7 +32,7 @@ function App() {
             </span>
           </div>
           <div className='mx-auto my-auto'>
-            <p className='text-white text-8xl font-mono'>SAVE THE DATE</p><br></br>
+            <p className='text-white text-8xl font-mono '>SAVE THE DATE</p><br></br>
             <p className='text-white text-xl text-center'>NewYork | Joseph and Anna | November 28th</p>
           </div>
         </div>
