@@ -1,12 +1,17 @@
-import { useState , useEffect } from 'react'
-
+import { useState, useEffect } from 'react'
+import inputBox from './Hooks/useCurrency'
 function App() {
-  
-  
+
+
   return (
     <>
-      <div q>
+      <div className='w-full h-1/3 bg-white flex flex-col'>
+        <div>
 
+        </div>
+        <div>
+
+        </div>
       </div>
     </>
   )
