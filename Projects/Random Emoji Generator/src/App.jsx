@@ -14,10 +14,6 @@ function App() {
     setLoading(false);
   }, []);
 
-  useEffect(() => {
-    fetchEmoji();
-  }, []);
-
   return (
     <div className="w-full bg-red-300 h-screen flex justify-center items-center">
       <div className="w-1/3 h-[25rem] bg-white rounded-xl shadow-red-700 shadow-xl 
