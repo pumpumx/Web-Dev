@@ -1,61 +1,62 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <div className='w-full h-[10vh] bg-red-500 flex items-center'>
-            <span >
+        <div className='w-full h-[10vh] bg-red-500 flex items-center justify-around px-10'>
+            <div>
                 <img
-                    src=""
-                    alt=""
-                    style={{
-
-                    }}
-                ></img>
-            </span>
-            <span className='flex gap-5 text-lg font-bold m-10'>
-                <ul>
+                    src="/assets/Logo.png" // Adjusted path
+                    alt="Logo"
+                    width={50}
+                />
+            </div>
+            <div className='flex gap-5 text-lg font-bold m-10'>
+                <ul className='flex gap-5'>
                     <li>
-                        <NavLink to="/home"
-                        style={({isActive})=>({
-                            color: isActive?"orange":"Black"
-                        })}
+                        <NavLink
+                            to="/home"
+                            style={({ isActive }) => ({
+                                color: isActive ? "orange" : "black",
+                            })}
                         >
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/About"
-                        style={({isActive})=>({
-                            color: isActive?"orange":"Black"
-                        })}
+                        <NavLink
+                            to="/about"
+                            style={({ isActive }) => ({
+                                color: isActive ? "orange" : "black",
+                            })}
                         >
                             About
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Contact"
-                        style={({isActive})=>({
-                            color: isActive?"orange":"Black"
-                        })}
+                        <NavLink
+                            to="/contact"
+                            style={({ isActive }) => ({
+                                color: isActive ? "orange" : "black",
+                            })}
                         >
                             Contact
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Github"
-                        style={({isActive})=>({
-                            color: isActive?"orange":"Black"
-                        })}
+                        <NavLink
+                            to="/github"
+                            style={({ isActive }) => ({
+                                color: isActive ? "orange" : "black",
+                            })}
                         >
                             Github
                         </NavLink>
                     </li>
-                   
                 </ul>
-            </span>
+            </div>
         </div>
-    )
+    );
 }
 
-export default Navigation
+export default Navigation;
