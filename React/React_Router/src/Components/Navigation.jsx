@@ -6,12 +6,12 @@ function Navigation() {
         <div className='w-full h-[10vh] bg-red-500 flex items-center justify-around px-10'>
             <div>
                 <img
-                    src="/assets/Logo.png" // Adjusted path
+                    src="./src/assets/Logo.png" 
                     alt="Logo"
                     width={50}
                 />
             </div>
-            <div className='flex gap-5 text-lg font-bold m-10'>
+            {/* <div className='flex gap-5 text-lg font-bold m-10'>
                 <ul className='flex gap-5'>
                     <li>
                         <NavLink
@@ -54,7 +54,7 @@ function Navigation() {
                         </NavLink>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 }
