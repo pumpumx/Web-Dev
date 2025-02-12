@@ -9,7 +9,7 @@ function App() {
     <>
     <Navigation/>
     <Outlet/>
-    {/* <Footer/> */}
+    <Footer/>
     </>
   )
 }
