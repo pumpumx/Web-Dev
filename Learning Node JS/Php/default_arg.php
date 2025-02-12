@@ -10,6 +10,6 @@
 
     function add(float $a , float $b){
         return (int)($a + $b);
-    }
-    echo add(1.5,1.2);
+    }   
+        echo add(1.5,1.2);
 ?>
