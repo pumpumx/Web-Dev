@@ -36,7 +36,7 @@ function App() {
   useEffect(()=>{
     console.log("Updated data: ", data)
   } , [data])
-  return (
+  return (  
    <>
    <div className='w-full m-0 p-0 h-screen bg-gradient-to-b from-green-500 to-green-200 flex justify-center items-center'>
     <div className='w-[80%] h-[90%] bg-gray-300 flex justify-center
