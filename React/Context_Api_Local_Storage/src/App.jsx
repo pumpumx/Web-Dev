@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { TodoProvider} from './Context/TodoContext'
 import Form from './Component/Form';
+import Items from './Component/Items';
 // import Form from './Component/Form';
 function App() {
   
@@ -25,8 +26,8 @@ function App() {
         <div className="w-[80%] h-[10%] rounded-xl mb-[20%] flex justify-between">
           <Form />
         </div>
-        <div className='flex flex-wrap w-[full] bg-black'>
-          
+        <div className='flex flex-col flex-wrap w-[full] bg-black'>
+            <Items/>
         </div>
       </div>
    </TodoProvider>

@@ -6,7 +6,12 @@ function Items() {
     const {deleteTodo , updateTodo , toggle} = useTodo;
   return (
     
-    <div>Items</div>
+    <div className={`w-full flex 
+    
+    ${(complete)?"bg-green-300 line-through":"bg-gray-600"} `}>
+        <input type="checkbox" onClick={!toggle}></input>
+
+    </div>
   )
 }
 
