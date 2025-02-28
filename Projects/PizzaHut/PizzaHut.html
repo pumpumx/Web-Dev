@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Hut</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="w-full h-200vh">
+        <div class="w-full h-100vh">
+            <nav class="w-full flex justify-around items-center h-[8vh] ">
+                <div class="flex justify-center items-center">
+                    <img src="download.png" alt="Pizza" class="w-[40px]"><p class="font-fantasy">Pizza Hut</p>
+                </div>
+                <div class="underline text-gray-500">
+                    <p class="cursor-pointer">Sign in</p>
+                </div>
+            </nav>
+            <div class=" w-full h-[45vh] z-2 flex-wrap">
+                <img src="https://www.pizzahut.co.in/order/images/backgrounds/in/en-IN/home-bg-md.9dd31be8f7ced8c87278cb3aa6726170.jpg" 
+                class="cover">
+            </div>
+            <div class="flex justify-center items-center mx-auto w-full z-10  drop-shadow-2xl ">
+                <div class="w-[30%] h-[100%] bg-white shadow-4xl ">
+                    <div class="flex justify-around items-center text-bold p-6">
+                        <p>Delivery</p> 
+                        <p>Collect from Store</p>
+                    </div>
+                    <div class="p-6 w-full h-[40%]">
+                        <p class="font-bold">FIND YOUR NEAREST HUT</p>
+                        <P class="text-sm">Enter your address to see your local deals, coupons and offers.</P>
+                        <br>
+                        <input type="text"  id="" class=" text-lg w-full ouline-none border-none indent-2 h-[100%] text-gray-400" placeholder="Enter your location for delivery">
+                        <button class="w-full text-blue-500 h-[60%] hover:bg-gray-100 cursor-pointer text-left pl-2">Find my Current Location</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="w-full flex h-[10vh] mt-10 items-center justify-around">
+                <span class=" text-center bg-gray-300 h-[0.5vh] w-[40%]"></span>
+                <span class="w-[20%] flex items-center justify-center"><p class="text-2xl text-bold">Our Most Popular Deals</p></span>
+                
+                <span class=" text-center bg-gray-300 h-[0.5vh] w-[40%]"></span>
+            </div>
+    </body>
+</html>
