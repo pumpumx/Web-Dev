@@ -5,7 +5,7 @@ var fs = require('fs');
 
 http.createServer(function(request, response){
     var q = url.parse(request.url,true);
-    var file_path  = '.' + q.pathname; 
+    var file_path  = '.' + q.pathname; w
     fs.readFile(file_path , function(err , data){
         if(err){
             response.writeHead(404 , {'content-type':'text/html'});
