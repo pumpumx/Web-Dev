@@ -1,11 +1,14 @@
 import { useState } from 'react'
+import AddTodo from './Components/AddTodo'
+import Todo from './Components/Todo'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
+   <AddTodo/>
+   <Todo/>
    </>
   )
 }
