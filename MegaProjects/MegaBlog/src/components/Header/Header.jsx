@@ -2,7 +2,10 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='w-full h-[10vh] bg-blue-600 flex justify-center items-center'>
+      <p>Header wohoooo</p>
+
+    </div>
   )
 }
 
