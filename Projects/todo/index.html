@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputValue"/>
+    <button onclick="addTodo()">Add Text</button>
+    <ul id="parent">
+
+    </ul>
+</body>
+<script>
+    var todos = []
+    var parent = document.getElementById("parent")
+    function renderTodo(){
+        const list = document.getElementById("parent")
+        list.innerHTML = ''
+        todos.forEach((value , index)=> {
+            console.log("todo value " ,value)
+            var Li = document.createElement("li")   
+            Li.innerHTML = 
+            `<span><p>${value}</p></span>
+             <button onCLick="editTodo(${index})"">edit</button>
+            <button onCLick="deleteTodo(${index})"}>delete</button>
+            `;
+            list.appendChild(Li)
+        })   
+    }
+
+    function addTodo(){
+        const input = document.getElementById("inputValue")
+        const value = input.value
+        value.trim()
+        console.log("value: " ,value)
+        if(value){
+            todos.push(value)
+            input.value=""
+            renderTodo()
+        }
+    }
+    function deleteTodo(index){
+        if(confirm("Are you sure you want to delete"))
+        todos.splice(index , 1)
+        renderTodo()
+    }
+    function editTodo(index){
+        const value = prompt("Enter the new value")
+        if(value!=""){
+            todos[index] = value
+            console.log("todos[index]" , todos[index])
+            renderTodo()
+        }
+        else{
+            console.log("error updating value")
+        }
+    }
+</script>
+</html>
