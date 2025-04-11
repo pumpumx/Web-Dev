@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f0ff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    background-color: #007BFF;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #007BFF;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .timer {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-full flex justify-center items-center bg-blue-500">
+      <div
+        class="container flex flex-col justify-around mx-auto w-[20%] h-[40%] bg-white text-blue-800"
+      >
+        <h1 class="text-blue-800 text-xl font-bold">CountDown Timer</h1>
+        <input
+          type="number"
+          id="secondsInput"
+          placeholder="Enter seconds"
+          min="1"
+          class="w-[99%] h-[22%] border-solid text-center font-bold text-xl outline-none indent-2 border-6"
+        />
+        <button onclick="startTimer()" class="bg-blue-600 text-white font-bold text-lg mx-auto w-[70%] h-[20%]">
+          Start Countdown
+        </button>
+        <div class="timer w-[97%] h-[20%] bg-blue-300 text-center rounded-md" id="timerDisplay">00:00</div>
+      </div>
+    </div>
+    <script>
+      var timerInterval;
+      function startTimer() {
+      clearInterval(timerInterval); 
+      const secondsInput = parseInt(document.getElementById("secondsInput").value);
+      if (isNaN(secondsInput) || secondsInput <= 0) {
+        alert("Please enter a valid number of seconds.");
+        return;
+      }
+
+      let seconds = secondsInput;
+
+      function updateDisplay() {
+        const min = Math.floor(seconds / 60).toString().padStart(2, '0');
+        const sec = (seconds % 60).toString().padStart(2, '0');
+        document.getElementById("timerDisplay").textContent = `${min}:${sec}`;
+      }
+      updateDisplay(); 
+      timerInterval = setInterval(() => {
+        seconds--;
+        updateDisplay();
+        if (seconds <= 0) {
+          clearInterval(timerInterval);
+          document.getElementById("timerDisplay").innerHTML = "Timer's Up"
+
+        }
+      }, 1000);
+    }
+  </script>
+  </body>
+</html>
